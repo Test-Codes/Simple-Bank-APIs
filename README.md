@@ -17,5 +17,32 @@ deposit => GET: /accounts/:id
 withdrawals => PUT: /accounts/:id/withdraw
 ...Got it!
 
-
 PUT: /accounts/:id/deposit (+ will be deposit, - will be withdrawals)
+
+## API
+
+Localhost: http://localhost:1337/  
+Heroku Server: http://simplebankapis.herokuapp.com/
+
+
+### Accounts
+
+#### CRUD
+CRUD API is available as a default feature of Sails.js
+```
+POST: /accounts
+GET: /accounts
+GET: /accounts/:id
+PUT: /accounts/:id
+DELETE: /accounts/:id
+```
+
+
+#### Deposit API
+`POST: /accounts/:id/deposit`  
+Required Params: `amount`  
+Amount has to be an integer value. If the amount is positive number, it will deposit the money. If it is negative number, it will withdraw the money.
+
+#### Examples
+`http://localhost:1337/accounts/1/deposit?amount=-1`
+`http://simplebankapis.herokuapp.com/accounts/1/deposit?amount=-1`
