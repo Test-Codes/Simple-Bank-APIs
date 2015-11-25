@@ -34,7 +34,9 @@ module.exports.routes = {
 
   '/': {
     view: 'homepage'
-  }
+  },
+
+  '/accounts/:id/deposit': 'AccountsController.deposit'
 
   /***************************************************************************
   *                                                                          *
