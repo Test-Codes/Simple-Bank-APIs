@@ -44,5 +44,5 @@ Required Params: `amount`
 Amount has to be an integer value. If the amount is positive number, it will deposit the money. If it is negative number, it will withdraw the money.
 
 #### Examples
-`http://localhost:1337/accounts/1/deposit?amount=-1`
+`http://localhost:1337/accounts/1/deposit?amount=-1`  
 `http://simplebankapis.herokuapp.com/accounts/1/deposit?amount=-1`
